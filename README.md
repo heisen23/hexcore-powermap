@@ -1,11 +1,11 @@
 # hexcore-powermap
 Visualization of hexagonal reactor core power distributions with labeled assemblies and gradient mapping.
 
-This tool reads assembly-wise power values from CSV files, maps them onto a hexagonal grid, and generates a **core power distribution plot** with numerical labels and a color gradient. A colorbar legend is included for reference.
+This [tool](src/power_distribution_grid_plot.py) reads assembly-wise power values from CSV files, maps them onto a hexagonal grid, and generates a **core power distribution plot** with numerical labels and a color gradient. A colorbar legend is included for reference.
 
 ## Input Data Requirements
 
-Both `inner_FAs.csv` and `outer_FAs.csv` must contain **assembly power values** in terms of their grid coordinates as follows:
+Both [inner_FAs.csv](data/inner_FAs.csv) and [outer_FAs.csv](data/outer_FAs.csv) must contain **assembly power values** in terms of their grid coordinates as follows:
 
 | x    | y    | Power (MW) |
 | ---- | ---- | ---------- |
@@ -20,4 +20,4 @@ You may combine or split the dataset as needed. The plotting script merges the t
 
 
 ## Example Output
-![Alt text](/plot.png)
+![Power Distribution Plot](src/plot.png)
