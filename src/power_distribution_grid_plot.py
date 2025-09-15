@@ -22,7 +22,7 @@ power_values = {(row['x'], row['y']): row['Power (MW)'] for _, row in pd.concat(
 power_list = [power for power in power_values.values()] # Non-zero power list
 
 polys = []
-fig, ax = plt.subplots(dpi=600)
+fig, ax = plt.subplots(dpi=600) #Increase dpi for better quality
 ax.set_aspect("equal")
 ax.set_axis_off()
 
