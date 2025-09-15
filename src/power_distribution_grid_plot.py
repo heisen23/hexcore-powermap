@@ -12,8 +12,8 @@ configure(permissive=True)
 hexes = grids.HexGrid.fromPitch(1.0)
 
 # Load data from CSV files
-inner_data = pd.read_csv("inner_FAs.csv") # inner assembly data
-outer_data = pd.read_csv("outer_FAs.csv") # outer assembly data
+inner_data = pd.read_csv("data/inner_FAs.csv") # inner assembly data
+outer_data = pd.read_csv("data/outer_FAs.csv") # outer assembly data
 
 # Combine data into a single dictionary of (i, j) to power values
 power_values = {(row['x'], row['y']): row['Power (MW)'] for _, row in pd.concat([inner_data, outer_data]).iterrows()}
