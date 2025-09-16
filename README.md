@@ -13,7 +13,7 @@ Both [inner_FAs.csv](data/inner_FAs.csv) and [outer_FAs.csv](data/outer_FAs.csv)
 | 1    | -1   | 1.78       |
 | 2    | 0    | 1.34       |
 
-- **x, y** → axial grid coordinates of the hex assembly (from ARMI hex grid indexing).  
+- **x, y** → axial grid coordinates of the hex assembly (details about the hex grid indexing can be found [here](https://terrapower.github.io/armi/gallery/framework/run_grids1_hex.html).  
 - **Power (MW)** → assembly power value, floating-point.  
 
 You may combine or split the dataset as needed. The plotting script merges the two CSVs internally.
